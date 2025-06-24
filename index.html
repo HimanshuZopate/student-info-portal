@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration & Info Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <h1>Student Registration Portal</h1>
+        <p>Fill the form to register your details</p>
+    </header>
+
+    <!--Registration Form Section-->
+    <section id="registration">
+        <form action="\action">
+            <!--Full name-->
+            <label for="name"Full Name:></label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="exampple@gmail.com" required>
+
+            <!--Phone-->
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="1234567890" required>
+
+            <!--Gender-->
+            <label>Gender:</label>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Female">Female</label><br><br>
+
+            <!--courses-->
+            <label>Skills:</label>
+            <input type="checkbox" name="Skills" id="html" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="Skills" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="Skills" id="js" value="JavaScript" >
+            <label for="js">JavaScript</label><br><br>
+
+            <!--City-->
+            <label for="city">City</label>
+            <select name="city" id="city">
+            <option value="">Select</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Pune">Pune</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            </select>
+
+            <!--Bio-->
+            <label for="bio">Short Bio</label>
+            <textarea name="bio" id="bio" cols="50" rows="4" placeholder="Write something about youreself...."></textarea><br><br>
+
+            <!--Submit button-->
+            <button type="submit">Register</button>
+        </form>
+
+    </section>
+
+    <!--Student Table Preview Section-->
+    <section id="preview">
+        <h2>Registered Students</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Courses</th>
+                    <th>City</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Himanshu Zopate</td>
+                    <td>Male</td>
+                    <td>HTML, CSS, JS</td>
+                    <td>Yavatmal</td>
+                    <td>1234567890</td>
+                </tr>
+                <tr>
+                    <td>Kunal Warkante</td>
+                    <td>Male</td>
+                    <td>CSS, JS</td>
+                    <td>Amravati</td>
+                    <td>9876543210</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Himanshu Zopate | All rights reserved</p>
+    </footer>
+</body>
+</html>
